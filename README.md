@@ -8,7 +8,9 @@
 
 在线体验：[浮想本地演示](https://daizhetang-create.github.io/fuxiang-app-public/)。点击“直接体验演示空间”；此公开版使用规则整理，不调用大模型、不上传录音，也不提供云账号同步。输入的内容仅保存在当前浏览器，请勿输入敏感资料。
 
-## 已完成
+## 完整版本能力
+
+以下能力已在产品代码中实现；公开 Pages 演示默认关闭云端与模型调用，方便安全地浏览交互。
 
 - 高完成度响应式 UI、日间/深夜模式、PWA 安装清单。
 - 注册登录与本地演示空间。
@@ -18,6 +20,10 @@
 - 硅基流动 OpenAI-compatible 服务端代理；API 密钥不会进入浏览器或版本库。
 
 详见 [APP_STATUS.md](APP_STATUS.md)、[DESIGN_REFERENCES.md](DESIGN_REFERENCES.md) 和 [CHANGELOG.md](CHANGELOG.md)。
+
+## 公开演示能力
+
+公开 Pages 与无密钥本地模式提供：响应式界面、文字整理规则、本地保存、搜索、分类、关联和删除。录音上传、真实模型调用、账号注册与跨设备同步需要自行配置服务端。
 
 ## 本地体验
 
