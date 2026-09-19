@@ -25,6 +25,9 @@ function mockOrganize(text: string): AIResult {
 }
 
 export async function organizeIdea(text: string): Promise<{ result: AIResult; isDemo: boolean }> {
+  if (import.meta.env.VITE_PUBLIC_DEMO === 'true') {
+    return { result: mockOrganize(text), isDemo: true }
+  }
   try {
     const response = await fetch('/api/organize', {
       method: 'POST',
@@ -40,6 +43,9 @@ export async function organizeIdea(text: string): Promise<{ result: AIResult; is
 }
 
 export async function transcribeAudio(blob: Blob): Promise<string> {
+  if (import.meta.env.VITE_PUBLIC_DEMO === 'true') {
+    throw new Error('公开演示不发送录音，请使用文字输入。语音转录需要自行配置后端。')
+  }
   const form = new FormData()
   form.append('audio', blob, 'thought.webm')
   const response = await fetch('/api/transcribe', { method: 'POST', body: form })

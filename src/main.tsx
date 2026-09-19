@@ -9,6 +9,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   </React.StrictMode>,
 )
 
-if ('serviceWorker' in navigator && import.meta.env.PROD && window.location.protocol !== 'file:') {
+if ('serviceWorker' in navigator && import.meta.env.PROD && import.meta.env.VITE_PUBLIC_DEMO !== 'true' && window.location.protocol !== 'file:') {
   window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js'))
 }
