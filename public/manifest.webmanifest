@@ -1,0 +1,18 @@
+{
+  "name": "浮想 · AI 思想孵化器",
+  "short_name": "浮想",
+  "description": "开口记录，自动整理，让念头继续生长。",
+  "lang": "zh-CN",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f1f0ea",
+  "theme_color": "#f1f0ea",
+  "icons": [
+    {
+      "src": "/fuxiang-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

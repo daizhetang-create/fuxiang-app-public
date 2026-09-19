@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="132" fill="#f1f0ea"/>
+  <circle cx="256" cy="256" r="146" fill="none" stroke="#1b1c19" stroke-width="10"/>
+  <path d="M144 212c44-94 178-130 255-29" fill="none" stroke="#6c5ce7" stroke-width="12" stroke-linecap="round"/>
+  <path d="M182 335c42 33 105 37 151 8" fill="none" stroke="#d7f36b" stroke-width="18" stroke-linecap="round"/>
+  <text x="256" y="309" text-anchor="middle" font-family="serif" font-size="164" fill="#1b1c19">浮</text>
+</svg>
